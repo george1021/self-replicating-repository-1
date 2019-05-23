@@ -71,5 +71,5 @@ def replication():
 
 if __name__ == "__main__":
     # Uncomment the below line to run via HTTP - don't use in production
-    # os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+    os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
     app.run()
