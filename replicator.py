@@ -45,7 +45,7 @@ def callback():
                                client_secret=CLIENT_SECRET,
                                authorization_response=request.url)
     session['auth_token'] = token
-    return redirect(url_for('repl'))
+    return redirect(url_for('replication'))
 
 
 @app.route('/replication')
