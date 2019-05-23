@@ -1,1 +1,1 @@
-web gunicorn repl_app:app
+web gunicorn replicator:app
