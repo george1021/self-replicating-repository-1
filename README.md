@@ -49,11 +49,8 @@ export APP_SECRET=your_app_secret_id
 ```
 For **CLIENT_ID** and **CLIENT_SECRET** values paste those obtained from GitHub in *Installation Prerequisites* section.
 
-**APP_SECRET** is the secret key for Flask app that should not be exposed. You can use the output of the below snippet to generate key or any other phrase of your choice:
-```python
-import os
-os.urandom(24)
-```
+**APP_SECRET** is the secret key for Flask app that should not be exposed. Use a phrase or randomly generated values as the secret.
+
 4. **This should not be done in prod!**
 Normally OAuth2 is not used over HTTP, but it can be useful for local testing. In order to achieve that either set environment variable:
 ```bash
@@ -73,7 +70,7 @@ python replicator.py
 1. Login to Heroku and go [create new app](https://dashboard.heroku.com/new-app)
 2. Give the name to your app in **App name** field. 
 3. On the next page choose the **Deployment method** that works best for you.
-4. On **Activity** tab expand **Config Vars** and set environment variables with your own values. Lookup their meaning in *Local Installation* section
+4. On **Activity** tab expand **Config Vars** and add environment variables CLIENT_ID, CLIENT_SECRET, and APP_SECRET with the values from the previous steps. Lookup their meaning in *Local Installation* section
 
 ```bash
 CLIENT_ID=your_github_client_id
