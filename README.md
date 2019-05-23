@@ -65,7 +65,7 @@ or uncomment the following line in *repl_app.py* file:
 ```
 5. Finally run the application:
 ```bash
-python repl_app.py
+python replicator.py
 ```
 6. Go to [http://127.0.0.1:5000](http://127.0.0.1:5000). If everything is done correctly you get the repository forked to your profile. Congrats!
 
